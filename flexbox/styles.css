@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px;
+    font-size: 30px;
+    background-color: black;
+    color:whitesmoke;
+    border-bottom:3px solid yellow;
+    margin-bottom:10px;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center; 
+    align-items:center;
+    gap:16px;
+    margin:0 auto;
+    max-width:1400px;
+    padding: 20px 10px;
+}
+
+.gallery img{
+    border-radius: 10px;
+    height: 300px;
+    max-width:350px;
+    object-fit:cover;
+    width:100%;
+
+}
+.gallery::after{
+    content:"";
+    width:350px;
+}
